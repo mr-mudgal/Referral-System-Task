@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+    <script defer>
+        const view_refer = (code) => {
+            window.open(`/view-my-referrals/${code}`, '_self')
+        }
+    </script>
+</head>
+<body>
+<h1>Enter the details To Login and see user details</h1>
+<form action="/user-details/" method="post">
+    {% csrf_token %}
+    <label> Email *
+        <input type="email" name="email" required/>
+    </label>
+
+    <label> Password *
+        <input type="password" name="password" required/>
+    </label>
+    <input type="submit" value="See Details">
+</form>
+{% if users %}
+<table>
+    <thead>
+    <tr>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Referral Code</th>
+        <th>Registered On</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{{ users.full_name }}</td>
+        <td>{{ users.email }}</td>
+        <td>{{ users.referral_code }}</td>
+        <td>{{ users.points }}</td>
+        <td>{{ users.register_time }}</td>
+        <td><button onclick=view_refer('{{users.referral_code}}')>View Referrals</button></td>
+    </tr>
+    </tbody>
+</table>
+{% endif %}
+</body>
+</html>

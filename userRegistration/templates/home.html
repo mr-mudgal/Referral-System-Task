@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script defer>
+        const login_page = () => {
+            window.open('/user-details/', '_self')
+        }
+
+        const register_page = () => {
+            window.open('/register/', '_self')
+        }
+    </script>
+</head>
+<body>
+    <h1>This is the home page for Referral System Website</h1>
+    <h3><button onclick="login_page()">See User Details</button></h3>
+    <h3><button onclick="register_page()">Register</button></h3>
+
+</body>
+</html>
