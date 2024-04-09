@@ -24,4 +24,4 @@ For any query raise issue or comment in the repository.
 
 Thank You
 
-coded by: <Rishabh Mudgal />
+coded by: {Rishabh Mudgal}
