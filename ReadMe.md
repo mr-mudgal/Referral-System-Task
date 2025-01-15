@@ -10,6 +10,12 @@ How to execute and run the Django Application without Docker?
 - Open the terminal and execute the following command: 'python manage.py runserver'
 - Then go to browser and open http://localhost:8000
 
+Few Snapshots:
+<img width="1379" src="https://github.com/user-attachments/assets/2a8aaec9-410a-4a3d-956f-a50513364168" />
+<img width="1379" src="https://github.com/user-attachments/assets/9477963a-732a-43cb-b777-4bc285cf2101" />
+<img width="1379" src="https://github.com/user-attachments/assets/ccf5bf00-9e37-49f2-bffd-db274fb3bd27" />
+<img width="1379" src="https://github.com/user-attachments/assets/929dec89-8c6f-4d7c-b07c-e5141ffbd492" />
+
 Points to Remember:
 - Django Application contain only one app userRegistration.
 - Unit Tests for Django apps are written in sub-directories inside tests directory.
